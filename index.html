@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier de Couture | AsPh Tec Ben</title>
+    <!-- Bootstrap CSS AsPh-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Style CSS-->
+    <style>
+        /* Texte général */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #faf7f2; /* fond clair luxe */
+            color: #2c2c2c;
+        }
+
+        /* Titres couture élégants */
+        h1, h2, .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            color: #c9a24d !important;
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: #f5e6c8;
+        }
+
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: #c9a24d;
+        }
+
+        /* Boutons luxe-africain */
+        .btn {
+            border-radius: 30px;
+            font-weight: 500;
+        }
+
+        .btn-warning {
+            background: linear-gradient(90deg, #c9a24d, #a67c00);
+            border: none;
+            color: #000;
+        }
+      
+
+        .btn-warning:hover {
+            background: linear-gradient(90deg, #a67c00, #c9a24d);
+        }
+
+        /* Style signature couture */
+        .hero h1 {
+            font-size: 3rem;
+            font-style: italic;
+        }
+
+        /* Slogan couture manuscrit */
+        .hero p {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2rem;
+        }
+
+        /* Menu navigation */
+        .nav-link {
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1520974735194-6cbe1c98c7f4');
+            background-size: cover;
+            background-position: center;
+            color: #f5e6c8; /* beige luxe */
+            padding: 110px 20px;
+            text-align: center;
+        }
+
+        .section-title {
+            margin-bottom: 30px;
+            font-weight: 700;
+            font-size: 2.4rem;
+            color: #3b2f1e; /* brun africain */
+            position: relative;
+        }
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #c9a24d, #3b2f1e);
+            margin: 12px auto 0;
+            border-radius: 2px;
+        }
+         
+
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        footer img {
+             transition: transform 0.3s ease;
+        }
+
+        footer img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="valentoCouture.jpeg" alt="Logo Atelier de Couture"
+            width="40" height="40" class="me-2">
+            <span>Valento Couture</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link" href="#apropos">À propos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#creations">Créations</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Atelier de Couture Professionnel</h1>
+    <p>Création sur mesure – Élégance – Qualité</p>
+    <a href="#contact" class="btn btn-warning btn-lg">Prendre rendez-vous</a>
+</section>
+
+<!-- A PROPOS -->
+<section id="apropos" class="container py-5">
+    <h2 class="section-title text-center">À propos de nous</h2>
+    <p class="text-center">Nous sommes un atelier de couture spécialisé dans la confection sur mesure de vêtements modernes et traditionnels. Chaque création est réalisée avec soin et passion.</p>
+</section>
+
+<!-- CREATIONS -->
+<section id="creations" class="bg-light py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-4">Nos créations</h2>
+
+    <div id="creationsCarousel"
+     class="carousel slide carousel-fade"
+     data-bs-ride="carousel"
+     data-bs-interval="4000"
+     data-bs-pause="hover">
+
+  <!-- Indicateurs -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#creationsCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#creationsCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#creationsCarousel" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#creationsCarousel" data-bs-slide-to="3"></button>
+    <button type="button" data-bs-target="#creationsCarousel" data-bs-slide-to="4"></button>
+    <button type="button" data-bs-target="#creationsCarousel" data-bs-slide-to="5"></button>
+    <button type="button" data-bs-target="#creationsCarousel" data-bs-slide-to="6"></button>
+  </div>
+
+  <!-- Images -->
+  <div class="carousel-inner text-center">
+
+    <div class="carousel-item active">
+      <img src="Valento.jpg" class="rounded" alt="">
+    </div>
+
+    <div class="carousel-item">
+      <img src="valentoCouture.jpg" class="rounded" alt="">
+    </div>
+
+    <div class="carousel-item">
+      <img src="Scenar.jpg" class="rounded" alt="">
+    </div>
+
+    <div class="carousel-item">
+      <img src="FB_IMG_1768673222449.jpg" class="rounded" alt="">
+    </div>
+
+    <div class="carousel-item">
+      <img src="FB_IMG_1768673217484.jpg" class="rounded" alt="">
+    </div>
+
+    <div class="carousel-item">
+      <img src="FB1.jpg" class="rounded" alt="">
+    </div>
+
+    <div class="carousel-item">
+      <img src="FB_IMG_1768673177344.jpg" class="rounded" alt="">
+    </div>
+
+  </div>
+
+  <!-- Flèches -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#creationsCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="container py-5">
+    <h2 class="section-title text-center">Contact</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form>
+                <input type="text" class="form-control mb-3" placeholder="Nom complet">
+                <input type="email" class="form-control mb-3" placeholder="Email">
+                <input type="number" class="form-control mb-3" placeholder="Téléphone / WhatsApp">
+                <textarea class="form-control mb-3" placeholder="Votre message"></textarea>
+                <button class="submit btn btn-dark w-100">Envoyer</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center">
+    <p class="mb-3">© 2026 Atelier Valento Couture - AsPh Tec Ben</p>
+
+    <div class="d-flex justify-content-center gap-4">
+
+        <!-- Localisation Google Maps -->
+        <a href="https://www.google.com/maps/search/?api=1&query=Atelier+Valentino+Couture+Kintambo+Kinshasa"
+           target="_blank" title="Nous localiser">
+            <img src="marker_48px.png" alt="Localisation" class="img-fluid">
+        </a>
+
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/raphael-amisi-KANGOLINGOLI" target="_blank" title="Facebook">
+            <img src="facebook_26px.png" alt="Facebook" class="img-fluid">
+        </a>
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/243992380154" target="_blank" title="WhatsApp">
+            <img src="whatsapp_48px.png" alt="WhatsApp" class="img-fluid">
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/raphael.a56" target="_blank" title="Instagram">
+            <img src="Instagram logo_48px.png" alt="Instagram" class="img-fluid">
+        </a>
+
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier de Couture | AsPh Tec Ben</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1520974735194-6cbe1c98c7f4');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .section-title {
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Atelier Couture</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link" href="#apropos">À propos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#creations">Créations</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Atelier de Couture Professionnel</h1>
+    <p>Création sur mesure – Élégance – Qualité</p>
+    <a href="#contact" class="btn btn-warning btn-lg">Prendre rendez-vous</a>
+</section>
+
+<!-- A PROPOS -->
+<section id="apropos" class="container py-5">
+    <h2 class="section-title text-center">À propos de nous</h2>
+    <p class="text-center">Nous sommes un atelier de couture spécialisé dans la confection sur mesure de vêtements modernes et traditionnels. Chaque création est réalisée avec soin et passion.</p>
+</section>
+
+<!-- CREATIONS -->
+<section id="creations" class="bg-light py-5">
+    <div class="container">
+        <h2 class="section-title text-center">Nos créations</h2>
+        <div class="row g-4">
+            <div class="col-md-4"><img src="https://via.placeholder.com/400x400" class="img-fluid rounded"></div>
+            <div class="col-md-4"><img src="https://via.placeholder.com/400x400" class="img-fluid rounded"></div>
+            <div class="col-md-4"><img src="https://via.placeholder.com/400x400" class="img-fluid rounded"></div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="container py-5">
+    <h2 class="section-title text-center">Contact</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form>
+                <input type="text" class="form-control mb-3" placeholder="Nom complet">
+                <input type="email" class="form-control mb-3" placeholder="Email">
+                <textarea class="form-control mb-3" placeholder="Votre message"></textarea>
+                <button class="submit btn btn-dark w-100">Envoyer</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Atelier de Couture - AsPh Tec Ben</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
